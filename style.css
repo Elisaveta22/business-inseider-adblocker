@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "Lab Grotesque";
+
+  src: url(/fonts/LabGrotesque-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Lab Grotesque bold";
+
+  src: url(/fonts/LabGrotesque-Black.woff2);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+body {
+  background: #e5e5e5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  padding: 2.3vw;
+  display: flex;
+  flex-direction: column;
+
+  filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.1));
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.name {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  flex-direction: row;
+  align-content: flex-end;
+  letter-spacing: 4px;
+  margin-top: -2vw;
+}
+
+.name h4 {
+  color: #185f7d;
+}
+
+.name .txt-prime {
+  color: #67c2e5;
+}
+
+.texts {
+  margin-top: -3vh;
+  width: 32vw;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.txt-insider {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.texts .main-heading {
+  font-family: Lab Grotesque bold;
+  font-size: 2.4em;
+  line-height: 41px;
+  /* or 108% */
+  color: #111111;
+  margin-bottom: 2vh;
+}
+
+#info {
+  font-family: Lab Grotesque;
+  font-size: 0.95em;
+  line-height: 21px;
+  /* or 140% */
+
+  color: #111111;
+}
+
+.choice {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3vh;
+}
+.choice .txt-above-btn {
+  font-family: Lab Grotesque;
+  font-size: 9px;
+  line-height: 12px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #111111;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.footer {
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 5%;
+  font-family: Lab Grotesque;
+}
+
+.footer span {
+  color: #9b9b9b;
+}
+
+#do-it-now-btn {
+  height: 42px;
+  width: 12vw;
+  background: #ffffff;
+  border: 2px solid #fd722d;
+  box-sizing: border-box;
+  border-radius: 50px;
+
+  font-family: Lab Grotesque;
+  font-size: 11px;
+  line-height: 12px;
+  /* or 109% */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #fd722d;
+}
+
+#get-access-btn {
+  height: 42px;
+  width: 12vw;
+  background: #fd722d;
+  border-radius: 50px;
+
+  font-family: Lab Grotesque;
+  font-size: 12px;
+  line-height: 12px;
+  /* or 100% */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.links {
+  text-decoration: none;
+  color: #fd722d;
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1250px) {
+  .container {
+    width: 60vw;
+  }
+
+  .texts {
+    width: unset;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    padding: 3vw;
+  }
+
+  .name {
+    font-size: 0.7em;
+  }
+
+  .texts {
+    width: 80vw;
+  }
+
+  .texts .main-heading {
+    font-size: 1.3em;
+    line-height: normal;
+    margin-top: 4vh;
+  }
+
+  #info {
+    margin-top: 0vh;
+    font-size: 0.8em;
+  }
+
+  .choice .txt-above-btn {
+    font-size: 0.4em;
+  }
+
+  #do-it-now-btn {
+    width: 30vw;
+    font-size: 0.6em;
+  }
+
+  #get-access-btn {
+    width: 30vw;
+    font-size: 0.6em;
+  }
+
+  .footer {
+    font-size: 0.7em;
+    align-content: flex-end;
+  }
+}
